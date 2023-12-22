@@ -29,7 +29,7 @@
         @csrf
         <div id="Email">
         <input type="email" placeholder="Email" name="email" id="Email" autocomplete="off"  value="{{ old('Email') }}" ></div>
-        @error('Email')
+        @error('email')
        <li style="color:red;font-weight:bold; list-style-type:none;text-align:center" class="custom-error-item">{{$message}}</li>
        @enderror
         <div class="correction">

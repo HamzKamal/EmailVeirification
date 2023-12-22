@@ -28,12 +28,12 @@
 
         <div id="Email2">
         <input type="text" placeholder="Email" name="email" id="Email" autocomplete="off" value="" ></div>
-
+        </div>
        
-       @error('Email')
-       <li style="color:red;font-weight:bold; list-style-type:none;text-align:center" class="custom-error-item" id="text2">{{$message}}</li>
+       @error('email')
+       <li style="color:red;font-weight:bold; list-style-type:none;text-align:center" class="custom-error-item" id="text2">email est obligatoire</li>
        @enderror
-    </div>
+    
 
     <div id="password2">
         <span><input type="password" id="password" name="password" placeholder="Mot de passe" value="" >
@@ -117,10 +117,8 @@
          passwordInputText.style.display="none";
          email.style.display="none";  
          verification.style.display="none";
-         text1.style.display="none";
+         text2.style.display="none";
          text3.style.display="none";
-         text4.style.display="none"; 
-        text2.style.display="none";
      });
      
      
